@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'bad';
+    src: url(assets/fonts/bad.ttf);
+}
+
+@font-face {
+    font-family: 'good';
+    src: url(assets/fonts/good.ttf);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:'bad';
+}
+
+
+.loder{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 111;
+}
+
+.loder .content{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.loder img{
+    width: 50px;
+    height: 50px;
+}
+
+
+.loder .btn{ 
+    padding: 10px 45px; 
+    border: 1px solid #b7ab98;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.loder .btn:hover{ 
+    background-color: #b7ab98;
+    color: #000;
+}
+
+.loder .btn:hover a{ 
+
+    color: #000;
+}
+
+.loder .btn a{ 
+    text-decoration: none;
+    color: #b7ab98;
+    font-size: 0.8vw;
+    font-family: 'bad';
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+   
+}
+
+.page-1{
+    height: 100vh;
+    width: 100vw;
+    background-color: crimson;
+}
+
+.page-1 .bg-video{
+    width: 100%;
+    height: 100%;
+}
+
+.page-1 .bg-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}

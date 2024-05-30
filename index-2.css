@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+@font-face {
+    font-family: 'bad';
+    src: url(assets/fonts/bad.ttf);
+}
+
+@font-face {
+    font-family: 'good';
+    src: url(assets/fonts/good.ttf);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:'bad';
+}
+
+.page-1{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.page-1 .vid{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+
+
+.page-1 .vid video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.row-h{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.row .text{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 30px;
+}
+
+.row .text h1{
+    font-size: 3vw;
+    margin: 0;
+    padding: 10PX 0PX;
+}
+
+.row .text img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.row.tx-2{
+   transform: translateX(-150px);
+}
+
+.row.tx-3{
+    transform: translateX(-200px);
+ }
+
+ .row.tx-4{
+    transform: translateX(-250px);
+ }
+
+ .page-2{
+    width: 100%;
+    height: 100vh;
+    background-color: salmon;
+}
+
+.row .text .c-vid{
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+}
+
+
+.row .text video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.row .big video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
