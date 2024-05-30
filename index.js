@@ -17,6 +17,7 @@ Shery.mouseFollower({
           top: "-100vh",
           duration: 3,
           delay: 0.5,
+          ease : ease
       });
   }) 
 
